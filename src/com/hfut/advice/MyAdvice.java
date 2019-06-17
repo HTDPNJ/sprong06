@@ -3,11 +3,14 @@ package com.hfut.advice;
 import org.aspectj.lang.ProceedingJoinPoint;
 
 public class MyAdvice {
-    public void mybefore(){
-        System.out.println("前置");
+    public void mybefore(String name,int age){
+        System.out.println("前置"+name+" "+age);
+    }
+    public void mybefore1(String name1){
+        System.out.println("前置"+name1);
     }
     public void myafter(){
-        System.out.println("后置");
+        System.out.println("后置1");
     }
     public void myaftering(){
         System.out.println("后置2");
